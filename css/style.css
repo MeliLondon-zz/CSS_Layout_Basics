@@ -32,6 +32,7 @@ a {
 	text-decoration: none;
 }
 
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -39,6 +40,7 @@ a {
 /* ---- Navigation ---- */
 
 .name {
+  margin: 0;
 	font-size: 1.25em;
 }
 
