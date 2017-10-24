@@ -32,7 +32,6 @@ a {
 	text-decoration: none;
 }
 
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -40,7 +39,6 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-  margin: 0;
 	font-size: 1.25em;
 }
 
@@ -64,8 +62,8 @@ a {
 
 .name a,
 .main-nav a {
-  padding: 10px 15px;
-  display: block;
+	padding: 10px 15px;
+	display: block;
 }
 
 /* ---- Layout Containers ---- */
@@ -76,7 +74,6 @@ a {
 }
 
 .main-header {
-  text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: #3acec2;
@@ -106,11 +103,27 @@ a {
 	}
 
 	.name,
+	.main-nav,
 	.main-nav li {
-	    display: inline-block;
-	 }
+		display: inline-block;
+	}
 
 	.name {
-	    width: 240px;
-	 }
+		width: 240px;
+		margin-right: 50px;
+	}
+
+	.main-nav li {
+		margin-right: 12px;
+	}
+
+	.col {    
+		display: inline-block;
+		width: 50%; 
+		margin-right: -4px;
+		vertical-align: top;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 }
