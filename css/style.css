@@ -105,7 +105,8 @@ a {
 
 	.feat-img {
 		width: 300px;
-    		float: right;
+    		float: left;
+		margin: 5px 25px 25px 0px;
 	}
 
 }
