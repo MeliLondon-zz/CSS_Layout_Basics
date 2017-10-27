@@ -103,25 +103,52 @@ a {
 		margin: 0 auto;
 	}
 
-	.feat-img {
-		width: 300px;
-    float: left;
-    margin: 5px 25px 25px 0px;
-    padding: 10px;
-    border: solid 1px #d9e4ea;
+	.main-nav {
+		float: right;
 	}
 
-  .name {
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		margin-left: 12px;
+	}
+
+	/* ---- Columns ---- */
+
+  .col {
     float: left;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
-  .main-nav {
-    float: right;
+  .primary {
+    width: 60%;
   }
 
-  .main-nav li {
-    float: left;
-    margin-left: 12px;
+  .secondary {
+    width: 40%;
   }
+	
+	
+	/* ------------- */
+
+	.feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 10px;
+		border: solid 1px #d9e4ea;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 
 }
