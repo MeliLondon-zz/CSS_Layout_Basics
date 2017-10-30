@@ -57,15 +57,15 @@ a {
 	display: block;
 }
 
-	.main-nav a {
-		font-size: .95em;
-		color: #3acec2;
-		text-transform: uppercase;
-	}
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
 	
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.main-nav a:hover {
+	color: #093a58;
+}
 
 /* ---- Layout Containers ---- */
 
@@ -118,22 +118,22 @@ a {
 
 	/* ---- Columns ---- */
 
-  .col {
-    float: left;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+	 .col {
+	    float: left;
+	    padding-left: 1em;
+	    padding-right: 1em;
+	  }
 
-  .primary {
-    width: 60%;
-  }
+	 .primary {
+	    width: 60%;
+	  }
 
-  .secondary {
-    width: 40%;
-  }
+	 .secondary {
+	    width: 40%;
+	  }
 	
 	
-	/* ------------- */
+/* ------------- */
 
 	.feat-img {
 		width: 300px;
