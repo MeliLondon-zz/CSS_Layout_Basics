@@ -24,8 +24,13 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
 	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
 }
 
 a {
@@ -36,6 +41,23 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	margin: 0;
+	line-height: 0;
+  position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -44,58 +66,58 @@ img {
 
 .name {
 	font-size: 1.25em;
-  margin: 0;
+	margin: 0;
 }
 
 .main-nav {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
-.name a,
-.main-nav a {
-	text-align: center;
-  display: block;
-  padding: 10px 15px;
-}
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
 
-.main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	color: #093a58;
-}
+	.main-nav a:hover {
+		color: #093a58;
+	}
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-  padding-top: .5em;
-  padding-bottom: .5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
 }
 
 .banner {
 	color: #fff;
 	background: #3acec2;
-  padding: 3.2em 0;
-  margin-bottom: 60px;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
 }
 
 .col {
-  padding-right: 1em;
-  padding-left: 1em;  
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
-}
-
-.banner,
-.main-footer {
-  text-align: center;
 }
 
 /* ---- Page Elements ---- */
@@ -105,7 +127,14 @@ img {
 }
 
 .headline {
-  margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+.icon-location {
+  width: 35px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
 }
 
 /* ================================= 
@@ -114,35 +143,34 @@ img {
 
 @media (min-width: 769px) {
 
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-  .name,
-  .col {
-    float: left;
-  }
+	.name,
+	.col {
+		float: left;
+	}
 
-  .primary,
-  .secondary {
-    width: 50%;
-  }
+	.primary,
+	.secondary {
+		width: 50%;
+	}
 
-  .main-nav {
-    float: right;
-  }
+	.main-nav {
+		float: right;
+	}
 
-  .main-nav li {
-    display: inline-block;
-    margin-left: 15px;
-  }
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
 
-  .tagline {
-    font-size: 1.4em;
-  }
+	.tagline {
+		font-size: 1.4em;
+	}
 
- 
 	/* ---- Float clearfix ---- */
 
 	.clearfix::after {
@@ -154,18 +182,19 @@ img {
 }
 
 @media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
 
-  .container {
-    width: 80%;
-    max-width: 1150px;
-  }
+	.primary {
+		width: 40%;
+	}
 
-  .primary {
-    width: 40%;
-  }
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
 
-  .secondary,
-  .tertiary {
-    width: 30%;
-  }
 }
