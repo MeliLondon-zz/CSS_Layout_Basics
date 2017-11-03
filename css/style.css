@@ -143,6 +143,10 @@ figcaption {
 
 @media (min-width: 769px) {
 
+  body {
+    padding-top: 68px;
+  }
+
 	.container {
 		width: 90%;
 		margin: 0 auto;
@@ -170,6 +174,14 @@ figcaption {
 	.tagline {
 		font-size: 1.4em;
 	}
+
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    width: 100%;
+    top: 0;
+  }
 
 	/* ---- Float clearfix ---- */
 
